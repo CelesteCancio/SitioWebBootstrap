@@ -1,0 +1,27 @@
+body {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	background-image: url("./Imágenes/fondoMaderaT.png");
+	background-size: cover;
+}
+
+.navbar {
+	background-color: hotpink;
+}
+
+.navbar-nav {
+	color: grey;
+	font-size: 17px;
+}
+
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+
+.description h1 {
+	color: #ff369b;
+}
