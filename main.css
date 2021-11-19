@@ -1,27 +1,63 @@
 body {
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-family: "Crete Round", serif;
 	background-image: url("./Imágenes/fondoMaderaT.png");
 	background-size: cover;
 }
 
-.navbar {
-	background-color: hotpink;
+.navbar-brand span {
+	color: hotpink;
 }
 
 .navbar-nav {
-	color: grey;
 	font-size: 17px;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+	font-size: 14px;
+	font-weight: light;
 }
 
 .description {
 	left: 50%;
 	position: absolute;
-	top: 45%;
-	transform: translate(-50%, -55%);
+	top: 50%;
+	transform: translate(-50%, -50%);
 	text-align: center;
 }
 
 .description h1 {
+	color: #ff369b;
+}
+
+.description p {
+	color: #3d4849;
+}
+
+.description button {
+	border: 1px solid #878c8d;
+	background: #878c8d;
+	color: #fff;
+	font-size: smaller;
+	margin-top: 5%;
+}
+.description button:hover {
+	border: 1px solid #ff369b;
+	background: #ff369b;
+}
+
+.imagenPreparacion img {
+	border-radius: 50px;
+}
+
+.imagenLele img {
+	border-radius: 50%;
+	filter: grayscale(100%);
+}
+
+.imagenLele img:hover {
+	filter: none;
+}
+
+.presentacionBlog h2, .presentacionLele h2 {
 	color: #ff369b;
 }
