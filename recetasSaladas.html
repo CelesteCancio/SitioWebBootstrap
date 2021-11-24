@@ -15,6 +15,7 @@
         <link rel="stylesheet" type="text/css" href="main.css">       
 </head>
 <body>
+    <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">            
             <a class="navbar-brand navbar-custom" href="suscribite.html">
@@ -49,50 +50,138 @@
             </div>               
         </div>
     </nav>
-    <div class="contenedorSaladas">
-
-        <div class="presentacion salado">
-            <h1>Recetas saladas</h1>
-            <p>Ideales para picoteo a cualquier hora ;)</p>
+    <!--Contenido-->
+    <div class="container-fluid recipes text-center">
+        <div class="row p-5">
+            <div class="col">
+                <h1>Recetas saladas</h1>
+                <p>Ideales para picoteo a cualquier hora ;)</p>
+            </div>
         </div>
-        <div class="texto1 salado">
-            <h2>Bizcochitos de aceite</h2>
-            <p>Mezclá <b>50 ml de agua bien caliente</b> con <b>80 ml aceite </b>.
-                Poné <b>220g de harina leudante </b> en un bol, agregá <b>1 cucharada de sal</b> e incorporá los líquidos: <b>50 ml de agua
-                bien caliente</b> mezclada con <b>80 ml aceite.</b></p>
-            <p><b>Uní sin amasar.</b></p>
-            <p>Vas a ver que la masa tiende a separarse (es normal). Poné la masa sobre la mesa enharinada, espolvoreá con harina y aplastá con las manos.
-                Doblá en 3 partes, aplaná con las manos y volvé a espolvorear con harina. 
-                Repetí la operación de los dobleces dos veces más.</p>
-            <p>Estirá, cortá dírculos pequeños, pinchalos y horneá sobre asadera seca, a fuego fuerte hasta que estén levemente doradas.</p>
-            <p><b>Ideas extra: </b>Son muy sabrosas de por sí, pero si preferís saborizarlas, le podés agregar orégano (como las de la foto) 
-                o algún condimento que te guste. Otra opción (que la convierte en agridulce) es mojarlos apenas con agua y espolvorearle 
-                azúcar por arriba antes de meter al horno.</p>
+        <!--Cards-->
+        <div class="row p-3 justify-content-around">
+            <div class="col">
+                <div class="card bg-image border border-5" style="width: 18rem; background-image: url('./Imágenes/bizcochitos.jpg');background-size: cover;">                        
+                    <div class="card-body">
+                      <h5 class="card-title">Bizcochitos de aceite</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#bizcochitos" class="btn btn-outline-light">Quiero bizcochitos</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card bg-image border border-5" style="width: 18rem; background-image: url('./Imágenes/tablitas.jpg');background-size: cover;">                        
+                    <div class="card-body">
+                      <h5 class="card-title">Tablitas integrales</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#tablitas" class="btn btn-outline-light">Quiero tablitas</a>
+                    </div>
+                  </div>
+            </div>
         </div>
-        <div class="imagen1 salado">
-            <img src="./Imágenes/bizcochitos.jpg" alt="bizcochitos"/>
+        <!--Recetas-->
+        <div class="row p-5"   id="bizcochitos">
+            <div class="col">
+                <h2>Bizcochitos de aceite</h2>
+                <p>Mezclá <b>50 ml de agua bien caliente</b> con <b>80 ml aceite </b>.
+                    Poné <b>220g de harina leudante </b> en un bol, agregá <b>1 cucharada de sal</b> e incorporá los líquidos: <b>50 ml de agua
+                    bien caliente</b> mezclada con <b>80 ml aceite.</b></p>
+                <p><b>Uní sin amasar.</b></p>
+                <p>Vas a ver que la masa tiende a separarse (es normal). Poné la masa sobre la mesa enharinada, espolvoreá con harina y aplastá con las manos.
+                    Doblá en 3 partes, aplaná con las manos y volvé a espolvorear con harina. 
+                    Repetí la operación de los dobleces dos veces más.</p>
+                <p>Estirá, cortá dírculos pequeños, pinchalos y horneá sobre asadera seca, a fuego fuerte hasta que estén levemente doradas.</p>
+                <p><b>Ideas extra: </b>Son muy sabrosas de por sí, pero si preferís saborizarlas, le podés agregar orégano (como las de la foto) 
+                    o algún condimento que te guste. Otra opción (que la convierte en agridulce) es mojarlos apenas con agua y espolvorearle 
+                    azúcar por arriba antes de meter al horno.</p>
+            </div>
+            <div class="col p-5">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade border border-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./Imágenes/bizcochitos.jpg" class="d-block w-100" alt="bizcochitos 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./Imágenes/bizcochitos1.JPG" class="d-block w-100" alt="bizcochitos 2">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
         </div>
-        <div class="texto2 salado">
-            <h2>Tablitas integrales</h2>
-            <p>Primero poné <b> 3/4 taza de harina integral </b> en forma de corona en la mesada, o en un bowl si no te gusta enhastrar 
-                manos y mesada. Agregale <b> 1 cucharadita de sal </b>, <b> 2 cucharadas de aceite</b> y<b> 1/3 taza de agua tibia</b>.</p>               </p>
-            <p><b>Optativos: orégano, ajo en polvo, ají molido, pimentón, provenzal deshidratada, cebolla deshidratada...</b></p>
-            <p>Mezclá hasta obtener una masa lisa y que no se pegue en las manos. Estirá y cortá en tiritas.</p>
-            <p><b>Optativos para espolvorearle por arriba: semillas de sésamo o la que te guste, queso rallado o alguuunos granitos de sal gruesa</b></p>
-            <p>Llevá a horno medio/fuerte por aproximadamente 10 minutos o hasta que estén doraditas por abajo. <b>No te pases que cambian 
-                de tablita a cartón en 5 segundos.</b></p>
-            <p>Si las encontrás muy secas, la próxima podés poner una parte de harina de trigo refinada (o cualquier otra) para darle suavidad. Pero
-                por lo pronto para salvar las que tenés, hacé un hummus, un queso untable saborizado con cebollita de verdeo o una mayonesa
-                de zanahoria, y...</p>
-            <p>A comer!</p>
-        </div>
-        <div class="imagen2 salado">
-            <img src="./Imágenes/tablitas.jpg" alt="tablitas"/>
-        </div>
-        <div class="footer">
-            <p>El blog de Cele &reg</p>
-        </div>
+        <div class="row p-5"  id="tablitas">
+            <div class="col">
+                <h2>Tablitas integrales</h2>
+                <p>Primero poné <b> 3/4 taza de harina integral </b> en forma de corona en la mesada, o en un bowl si no te gusta enhastrar 
+                    manos y mesada. Agregale <b> 1 cucharadita de sal </b>, <b> 2 cucharadas de aceite</b> y<b> 1/3 taza de agua tibia</b>.</p>               </p>
+                <p><b>Optativos: orégano, ajo en polvo, ají molido, pimentón, provenzal deshidratada, cebolla deshidratada...</b></p>
+                <p>Mezclá hasta obtener una masa lisa y que no se pegue en las manos. Estirá y cortá en tiritas.</p>
+                <p><b>Optativos para espolvorearle por arriba: semillas de sésamo o la que te guste, queso rallado o alguuunos granitos de sal gruesa</b></p>
+                <p>Llevá a horno medio/fuerte por aproximadamente 10 minutos o hasta que estén doraditas por abajo. <b>No te pases que cambian 
+                    de tablita a cartón en 5 segundos.</b></p>
+                <p>Si las encontrás muy secas, la próxima podés poner una parte de harina de trigo refinada (o cualquier otra) para darle suavidad. Pero
+                    por lo pronto para salvar las que tenés, hacé un hummus, un queso untable saborizado con cebollita de verdeo o una mayonesa
+                    de zanahoria, y...</p>
+                <p>A comer!</p>
+            </div>
+            <div class="col p-5">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade border border-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./Imágenes/tablitas.jpg" class="d-block w-100" alt="tablitas 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./Imágenes/tablitas1.jpg" class="d-block w-100" alt="tablitas 2">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div> 
     </div>
+</div>
+<!--Footer -->
+<footer class="bg-dark text-white fixed-bottom">
+    <!-- Grid container -->
+    <div class="container-fluid">
+      <!-- Section: Social media -->
+      <section class="m-2">
+        <a class="btn btn-outline-secondary btn-floating m-1" href="https://www.facebook.com/celeste.c.vitale" target=”_blank” role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>   
+        <a class="btn btn-outline-secondary btn-floating m-1" href="#!" target=”_blank” role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a class="btn btn-outline-secondary btn-floating m-1" href="https://www.instagram.com/celee.chelu" target=”_blank” role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>    
+        <a class="btn btn-outline-secondary btn-floating m-1" href="https://www.linkedin.com/in/m-celeste-cancio-vitale" target=”_blank” role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>    
+        <a class="btn btn-outline-secondary btn-floating m-1" href="https://github.com/CelesteCancio" target=”_blank” role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+      <small>Copyright &copy; Lele's blog</small>
+    </div>
+  </footer>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -15,6 +15,7 @@
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
+        <!--Nav bar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container-fluid">            
                 <a class="navbar-brand navbar-custom" href="suscribite.html">
@@ -49,52 +50,178 @@
                 </div>               
             </div>
         </nav>
-        <div class="contenedorDulces">
-
-            <div class="presentacion dulce">
-                <h1>Desayunos y meriendas</h1>
-                <p>Ideales para desayunos, meriendas y cualquier antojo...! <br><br><b>Y la mejor parte...? Comés rico mientras comés sano ;)</b></p>
+        <!--Contenido-->
+        <div class="container-fluid recipes text-center">
+            <div class="row p-5">
+                <div class="col">
+                    <h1>Desayunos y meriendas</h1>
+                    <p>Ideales para desayunos, meriendas y cualquier antojo...! <br><br><b>Y la mejor parte...? Comés rico mientras comés sano ;)</b></p>
+                </div>
             </div>
-            <div class="texto1 dulce">
-                <h2>Alfajorcitos crocantes</h2>
-                <p>Primero, mezclá <b> 80g de manteca pomada </b>con <b>150g azúcar (3/4 taza) </b>y un <b>chorrito de esencia de vainilla</b>. 
-                    A continuación, agregá 1 huevo y cuando esté bien integrado, incorporá <b>280 g (2 tazas) de harina </b> (yo usé mitad 
-                    leudante mitad 000). Amasá hasta que la mezcla quede homogénea y no se pegue en las manos.</p>
-                <p>Dejá <b>reposar en la heladera aproximadamente 30 minutos</b>. Pasado este tiempo, extendé la masa para los alfajores sobre una 
-                    superficie y cortá las galletas de forma circular. Deben salir unas 30.</p>
-                <p>Llevá las tapas de alfajores a cocinar en el horno a <b>180-200ºC por 20 minutos </b>. Recordá enmantecar y enharinar la 
-                    asadera. Es importante comprobar que las galletas no se doren.</p>
-                <p>Cuando las saques del horno, dejá que reposen unos minutos y cuando estén ya frías, <b>rellená los alfajores con dulce de 
-                        leche </b> (o el dulce que prefieras si por algún extraño motivo preferís otro dulce...!)</p>
-                <p><b>A disfrutar!</b></p>
+            <!--Cards-->
+            <div class="row p-3 justify-content-around">
+                <div class="col">
+                    <div class="card bg-image border border-5" style="width: 18rem; background-image: url('./Imágenes/alfajorcitosResized.png');background-size: cover;">                        
+                        <div class="card-body">
+                          <h5 class="card-title">Alfajorcitos crocantes</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#alfajores" class="btn btn-outline-light">Quiero alfajores</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-image border border-5" style="width: 18rem; background-image: url('./Imágenes/budinVeganoResized.png');background-size: cover;">                        
+                        <div class="card-body">
+                          <h5 class="card-title">Budín vegano de cítricos</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#budin" class="btn btn-outline-light">Quiero budín</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-image border border-5" style="width: 18rem; background-image: url('./Imágenes/scons.jpg');background-size: cover;">                        
+                        <div class="card-body">
+                          <h5 class="card-title">Scons</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#scons" class="btn btn-outline-light">Quiero scons</a>
+                        </div>
+                      </div>
+                </div>
             </div>
-            <div class="imagen1 dulce">
-                <img src="./Imágenes/Alfajorcitos.jpg" alt="alfajores"/>
+            <!--Recetas-->
+            <div class="row p-5"   id="alfajores">
+                <div class="col">
+                    <h2>Alfajorcitos crocantes</h2>
+                    <p>Primero, mezclá <b> 80g de manteca pomada </b>con <b>150g azúcar (3/4 taza) </b>y un <b>chorrito de esencia de vainilla</b>. 
+                        A continuación, agregá 1 huevo y cuando esté bien integrado, incorporá <b>280 g (2 tazas) de harina </b> (yo usé mitad 
+                        leudante mitad 000). Amasá hasta que la mezcla quede homogénea y no se pegue en las manos.</p>
+                    <p>Dejá <b>reposar en la heladera aproximadamente 30 minutos</b>. Pasado este tiempo, extendé la masa para los alfajores sobre una 
+                        superficie y cortá las galletas de forma circular. Deben salir unas 30.</p>
+                    <p>Llevá las tapas de alfajores a cocinar en el horno a <b>180-200ºC por 20 minutos </b>. Recordá enmantecar y enharinar la 
+                        asadera. Es importante comprobar que las galletas no se doren.</p>
+                    <p>Cuando las saques del horno, dejá que reposen unos minutos y cuando estén ya frías, <b>rellená los alfajores con dulce de 
+                            leche </b> (o el dulce que prefieras si por algún extraño motivo preferís otro dulce...!)</p>
+                    <p><b>A disfrutar!</b></p>
+                </div>
+                <div class="col p-5">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade border border-5" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./Imágenes/alfajor.JPG" class="d-block w-100" alt="alfajor crocante 1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Imágenes/alfajor1.JPG" class="d-block w-100" alt="alfajor crocante 2">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
             </div>
-            <div class="texto2 dulce">
-                <h2>Budín vegano de cítricos</h2>
-                <p>Primero poné <b> 200 ml de agua </b> con  <b> 150 ml de aceite</b>. Incorporá <b> 150 g de azúcar </b> y revolvé. </p>               </p>
-                <p>Agregá  <b> esencia de vainilla, ralladura de dos o tres limones y/o naranjas  </b>, lo que te guste para darle sabor. 
-                    Sumale <b> 350 g de harina leudante </b> y revolvé con paciencia hasta que se vayan los grumos.<br>Listo, ahora budinera 
-                    enmantecada y enharinada, y <b> horno precalentado a 175° por 30/40 minutos </b></p>
-                <p>Si le querés <b> sumar glaseado </b> por arriba, exprimí un poco del <b>jugo de limón </b>que rallaste y agregale <b>azúcar impalpable</b> (si no tenés, podés 
-                    lograr una muy similar procesando azúcar normal), hasta que quede una consistencia tipo miel (la sólida, no la líquida!) y 
-                    listo, lo pones por arriba del budín una vez frío, seca en un ratito ;)</p>
-                <p>A comer!</p>
+            <div class="row p-5"  id="budin">
+                <div class="col">
+                    <h2>Budín vegano de cítricos</h2>
+                    <p>Primero poné <b> 200 ml de agua </b> con  <b> 150 ml de aceite</b>. Incorporá <b> 150 g de azúcar </b> y revolvé. </p>               </p>
+                    <p>Agregá  <b> esencia de vainilla, ralladura de dos o tres limones y/o naranjas  </b>, lo que te guste para darle sabor. 
+                        Sumale <b> 350 g de harina leudante </b> y revolvé con paciencia hasta que se vayan los grumos.<br>Listo, ahora budinera 
+                        enmantecada y enharinada, y <b> horno precalentado a 175° por 30/40 minutos </b></p>
+                    <p>Si le querés <b> sumar glaseado </b> por arriba, exprimí un poco del <b>jugo de limón </b>que rallaste y agregale <b>azúcar impalpable</b> (si no tenés, podés 
+                        lograr una muy similar procesando azúcar normal), hasta que quede una consistencia tipo miel (la sólida, no la líquida!) y 
+                        listo, lo pones por arriba del budín una vez frío, seca en un ratito ;)</p>
+                    <p>A comer!</p>
+                </div>
+                <div class="col p-5">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade border border-5" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./Imágenes/budinVeganoResized.png" class="d-block w-100" alt="budin vegano 1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Imágenes/budin1.JPG" class="d-block w-100" alt="budin vegano 2">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
             </div>
-            <div class="imagen2 dulce">
-                <img src="./Imágenes/BudinVegano.jpg" alt="budin"/>
-            </div>
-            <div class="aside">
-                <h3>Consejos de alguien que no puede seguir una receta</h3>
-                <p>No te convence la cantidad de azúcar? </p><p>Te parece que quedaría mejor con avena? </p>
-                <p>Le agregarías miel?</p>
-                <p><br><b>Hacé todos los cambios que te parezca!</b></p><p><br>La cocina es arte, y el arte no tiene reglas!</p>
-            </div>
-            <div class="footer">
-                <p>El blog de Cele &reg</p>
-            </div>
+            <div class="row p-5"  id="scons">
+              <div class="col">
+                  <h2>Scons</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem a, delectus esse soluta 
+                    eum consectetur mollitia odio modi at, ab, sapiente ipsam assumenda placeat perferendis. Beatae 
+                    quod expedita enim eaque.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem a, delectus esse soluta 
+                    eum consectetur mollitia odio modi at, ab, sapiente ipsam assumenda placeat perferendis. Beatae 
+                    quod expedita enim eaque.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem a, delectus esse soluta 
+                    eum consectetur mollitia odio modi at, ab, sapiente ipsam assumenda placeat perferendis. Beatae 
+                    quod expedita enim eaque.</p>    
+              </div>
+              <div class="col p-5">
+                  <div id="carouselExampleFade" class="carousel slide carousel-fade border border-5" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./Imágenes/scons.jpg" class="d-block w-100" alt="scons 1">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./Imágenes/scons1.JPG" class="d-block w-100" alt="scons 2">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+              </div>
+          </div>    
         </div>
+  </div>
+    <!--Footer -->
+    <footer class="bg-dark text-white fixed-bottom">
+      <!-- Grid container -->
+      <div class="container-fluid">
+        <!-- Section: Social media -->
+        <section class="m-2">
+          <a class="btn btn-outline-secondary btn-floating m-1" href="https://www.facebook.com/celeste.c.vitale" target=”_blank” role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>   
+          <a class="btn btn-outline-secondary btn-floating m-1" href="#!" target=”_blank” role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a class="btn btn-outline-secondary btn-floating m-1" href="https://www.instagram.com/celee.chelu" target=”_blank” role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>    
+          <a class="btn btn-outline-secondary btn-floating m-1" href="https://www.linkedin.com/in/m-celeste-cancio-vitale" target=”_blank” role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>    
+          <a class="btn btn-outline-secondary btn-floating m-1" href="https://github.com/CelesteCancio" target=”_blank” role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+        <small>Copyright &copy; Lele's blog</small>
+      </div>
+    </footer>
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
