@@ -25,11 +25,11 @@ input[type="search"]::-webkit-input-placeholder {
 	text-align: center;
 }
 
-.description h1 {
+.description h1, .recipes h1 {
 	color: #ff369b;
 }
 
-.description p {
+.description p, .recipes p {
 	color: #3d4849;
 }
 
